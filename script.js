@@ -15,7 +15,7 @@ const observer = new IntersectionObserver(entries => {
             entry.target.classList.add('show');
             observer.unobserve(entry.target);
         }
-    // });
+     });
 }, { threshold: 0.2 });
 
 cards.forEach(card => observer.observe(card));
@@ -33,7 +33,7 @@ function typeWriter(element, text, speed = 100) {
 }
 
 const heroText = document.querySelector('.hero h1');
-const originalText = "SLOOTE DERYCK RAOËL";
+const originalText = "SLOOTE DERYCK RAOEL";
 heroText.innerHTML = "";
 typeWriter(heroText, originalText, 120);
 

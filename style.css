@@ -37,7 +37,8 @@ nav a:hover {
 }
 
 .hero {
-  min-height: 100vh; /* hero vult scherm */
+  min-height: 100vh; 
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,7 +79,7 @@ section {
   padding: 80px 10%;
   background: linear-gradient(180deg, rgba(5,8,22,0.9), rgba(10,15,44,0.9));
   border-top: 1px solid rgba(255,255,255,0.1);
-  height: auto; /* sectie groeit mee */
+  height: auto; 
 }
 
 h2 {
@@ -184,7 +185,7 @@ h2:hover {
   margin: auto;
 }
 
-@media (max-widt;600px) {
+@media (max-width: 600px) {
   .hero h1 { font-size: 2rem; }
   .cards { grid-template-columns: 1fr; }
   .about-container { flex-direction: column; align-items: center; }
