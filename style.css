@@ -137,7 +137,7 @@ h2:hover {
   .hero h1 { font-size: 2rem; }
   .cards { grid-template-columns: 1fr; }
   .about-container { flex-direction: column; align-items: center; }
-}/*  */
+}
 
 @media (max-width: 900px) {
   .hero h1 { font-size: 3rem; }
@@ -161,14 +161,33 @@ h2:hover {
     text-align: center;
 }
 
-.project-container img {
-max-width: 100px;
-height: auto;
-border-radius: 10px;
-}
-
 .project-foto img{
     border-radius: 10px;
     display:block;
 }
 
+.project-container img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.video-card video {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 8px;
+  display: block;
+  margin: auto;
+}
+
+@media (max-widt;600px) {
+  .hero h1 { font-size: 2rem; }
+  .cards { grid-template-columns: 1fr; }
+  .about-container { flex-direction: column; align-items: center; }
+  .project-container img,
+  .video-card video { max-width: 100%; } 
+}
